@@ -51,7 +51,7 @@ h2 {
 
 header {
   background: #2d4a22;
-  padding: 2rem 0 10rem;
+  padding: 2rem 0 6rem;
   text-align: center;
 }
 
@@ -61,7 +61,8 @@ header #logo {
 }
 
 #balance {
-  margin-top: -8rem;
+  margin-top: -4rem;
+  margin-bottom: 1.5rem;
 }
 
 #balance h2 {
@@ -233,8 +234,8 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: .6;
-  transition: all .5s;
+  opacity: 0.6;
+  transition: all 0.5s;
 }
 
 .button.cancel:hover {
@@ -251,14 +252,19 @@ footer {
 
 /* Resposividade */
 
-@media (min-width: 800px) {
+@media (min-width: 767px) {
   html {
     font-size: 87.5%;
+  }
+
+  header {
+    padding: 2rem 0 10rem;
   }
 
   #balance {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+    margin-top: -4rem;
   }
 }
